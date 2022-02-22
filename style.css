@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
+:root {
+  --primary: #ffde7c;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 1px;
+}
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.row {
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+  margin-right: -0.75;
+  margin-left: -0.75;
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0.75;
+  padding-left: 0.75;
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.col-4,
+.col-8 {
+  flex: 0 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 33.33333%;
+}
+.col-8 {
+  width: 66.66666%;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+/* starts from here  */
+.avatar {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 2.5rem;
+  border-radius: 100rem;
+}
+.title {
+  border-bottom: 5px solid var(--primary);
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.main-section-wrap {
+  padding: 3rem 0;
+  background-color: var(--primary);
+}
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+}
+.main-section h2 {
+  font-size: 1rem;
+  padding: 8px 16px;
+  background-color: #2d2d2d;
+  color: white;
+  flex-grow: 1;
+}
+.main-section h1 {
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.main-section2-wrap {
+  display: flex;
+}
+.sidebar {
+  color: white;
+  width: 33.3333%;
+  min-width: 33.3333%;
+}
+
+/* contact-section */
+.contact-section {
+  background-color: #646464;
+  padding: 4rem;
+}
+.contact-section h2 {
+  margin-bottom: 0.5rem;
+}
+.contact-section .contact-list .item {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.contact-section .contact-list .item a {
+  color: white;
+}
+/* expertise-section */
+.expertise-section {
+  background-color: #464646;
+  padding: 4rem;
+}
+.expertise-section h2 {
+  margin-bottom: 0.5rem;
+}
+.expertise-section .expertise-list .item {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+/* education-section */
+.education-section {
+  background-color: #252525;
+  padding: 4rem;
+}
+.education-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.education-section .education-list .item {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+/* work-section */
+.work-section {
+  padding: 4rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.work-section .item {
+  padding: 1.5rem 0;
+}
+
+.work-section .item + .item {
+  border-top: 1px solid #ccc;
+}
+.work-section .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.work-section .item-content {
+  padding: 1rem 0;
+}
+.work-section .reference {
+  margin-top: auto;
+}
+.work-section .reference a {
+  color: black;
+}
+/* //portfolio */
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-content p {
+  margin-bottom: 0.5rem;
+}
+.portfolio-col {
+  margin: auto 0;
+}
